@@ -1,2 +1,9 @@
-# monk
-A quiet workspace for MONK — photographs, notes, and code that tend toward stillness.
+# MONK
+
+A working repository.
+
+Images, fragments, experiments, and tools.
+Built slowly.
+Maintained with care.
+
+Signal over noise.
