@@ -1,64 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Monk</title>
-    <style>
-        body {
-            font-family: serif;
-            line-height: 1.6;
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 20px;
-            color: #333;
-        }
-        h2 {
-            font-weight: bold;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            margin-bottom: 40px;
-        }
-        .content {
-            margin-bottom: 60px;
-        }
-        .links {
-            font-size: 0.9em;
-        }
-        a {
-            color: #666;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        p {
-            margin-bottom: 24px;
-        }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MONK</title>
+
+<style>
+
+:root{
+--bg:#ffffff;
+--text:#111111;
+--muted:rgba(0,0,0,.48);
+--line:rgba(0,0,0,.08);
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html,body{
+height:100%;
+}
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;
+background:var(--bg);
+color:var(--text);
+display:flex;
+justify-content:center;
+padding:64px 24px;
+}
+
+.stage{
+width:min(720px,92vw);
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid var(--line);
+padding-bottom:18px;
+margin-bottom:56px;
+}
+
+.brand{
+font-size:12px;
+letter-spacing:.30em;
+text-transform:uppercase;
+color:var(--muted);
+}
+
+.back{
+font-size:11px;
+letter-spacing:.24em;
+text-transform:uppercase;
+text-decoration:none;
+color:var(--muted);
+}
+
+.back:hover{
+opacity:.6;
+}
+
+.title{
+font-size:56px;
+font-weight:800;
+letter-spacing:.22em;
+text-transform:uppercase;
+}
+
+.subtitle{
+margin-top:12px;
+font-size:14px;
+letter-spacing:.10em;
+text-transform:uppercase;
+color:var(--muted);
+}
+
+.copy{
+margin-top:48px;
+font-size:18px;
+line-height:1.7;
+max-width:520px;
+color:rgba(0,0,0,.70);
+}
+
+.footer{
+margin-top:80px;
+padding-top:20px;
+border-top:1px solid var(--line);
+display:flex;
+justify-content:space-between;
+font-size:11px;
+letter-spacing:.20em;
+text-transform:uppercase;
+color:var(--muted);
+}
+
+.footer a{
+text-decoration:none;
+color:inherit;
+}
+
+.footer a:hover{
+opacity:.6;
+}
+
+</style>
 </head>
+
 <body>
 
-    <h2>M O N K</h2>
+<div class="stage">
 
-    <div class="content">
-        <p>I’m working on a film called <em>Monk</em>.</p>
+<div class="topbar">
+<div class="brand">MONK</div>
+<a class="back" href="https://colemanvii.com">Back</a>
+</div>
 
-        <p>It’s been a long time coming.</p>
+<div class="title">MONK</div>
 
-        <p>If you’d like to contribute or receive updates as the film develops, I’d appreciate it.</p>
+<div class="subtitle">
+Film · In Development
+</div>
 
-        <p>Thank you for being here.</p>
-    </div>
+<p class="copy">
+MONK is a film project exploring discipline, solitude,
+and the slow work of becoming.
+</p>
 
-    <div class="links">
-        <p><strong>CONTRIBUTE</strong></p>
-        <a href="https://www.paypal.me/colecalfee">PayPal</a>
-        <a href="https://cash.app/$colecalfee">Cash App</a>
-        <a href="https://www.blockchain.com/btc/address/3LxYnKi8ujuy7FcTN3vjmuSJgaqvpenJjW">Bitcoin</a>
-        <a href="https://etherscan.io/address/0x4a1e367e474c842a9246132f3cc62f90dc429697">Ethereum</a>
-        <p><a href="mailto:colecalfee@gmail.com">Email</a></p>
-    </div>
+<div class="footer">
+<div>© 2026 MONK</div>
+<a href="mailto:colecalfee@gmail.com">Contact</a>
+</div>
+
+</div>
 
 </body>
 </html>
